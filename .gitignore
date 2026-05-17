@@ -169,7 +169,6 @@ cython_debug/
 # Data files and directories
 data/
 *.csv
-*.json
 *.pkl
 *.pickle
 *.h5
