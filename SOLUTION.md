@@ -20,6 +20,16 @@ python validate.py \
 
 256 steps * 32 batch size = 8192 samples (exactly the maximum allowed budget)
 
+## Achieved results
+
+```
+------------------------------------------------------------
+  1. Baseline (ImageNet head)       0.37%
+  2. Initialized head (no FT)       1.21%
+  3. Fine-tuned (ZO)                7.01%
+------------------------------------------------------------
+```
+
 
 ## Solution
 
@@ -75,4 +85,4 @@ Here are the results from different configurations tested.
 - **stratified**: Top-1 Accuracy: 2.40% | Config: `lr=0.05, rank=16, spsa=100`
 - **no_fitness_shaping**: Top-1 Accuracy: 2.27% | Config: `lr=0.05, rank=16, spsa=100`
 - **uniform_perturbation**: Top-1 Accuracy: 1.59% | Config: `lr=0.05, rank=16, spsa=100`
-```
+
